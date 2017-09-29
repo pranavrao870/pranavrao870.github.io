@@ -1,120 +1,156 @@
+<!-- Some of the script maybe similar to that of W3schoolf tutorials
+  Tutorials regarding the parallax effect, creating navbar, making page responsive
+  using bootstrap was used as reference while writing this script -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pranav's Homepage</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="home.css">
+  <title>Interactive Academics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  .parallax {
+    background-image: url("back.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    background-image: url("back_2.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    background-image: url("back_3.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    html, body, .container-table {
+      height: 100%; 
+    }
+    .container-table {
+        display: table;
+    }
+    .vertical-center-row {
+        display: table-cell;
+        vertical-align: middle;
+    }
+ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+        
+    @media screen and (max-width: 767px)
+    {
+      .sidenav
+      {
+        height: auto;
+        padding: 15px;
+      }
+      .parallax
+      {
+        background-attachment: scroll;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 
+<body>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="#">Pranav Rao</a>
-        </div>
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#About_me">About Me</a></li>
-                    <li><a href="#Hobbies">Hobbies</a></li>
-                    <li><a href="#Interests">Interests</a></li>
-                    <li><a href="#Contact_me">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Interactive Academics</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<div id="About_me" class="container text-center">
-    <h2 class="margin text-center"> Who Am I? </h2>
-    <img src="profile_new.jpg" class=" img-responsive img-circle margin" style="display:inline" alt="This was me:)">
-    <br />
-    <p>
-    <ul style="list-style-type:none margin: 0 padding: 0;">
-        <li>
-        Hi guys! I am Pranav, a sophomore from <b>IIT Bombay</b> <a href="https://www.cse.iitb.ac.in" target="_blank">CSE Department</a>.
-        I am born and brought up in Mumbai, although my parents are from Manglore, Karnataka.I am currently at Hostel 5, IIT Bombay campus.
-        </li>
-    </p>
-</div>
+<div class="parallax"></div>
 
-<div id="Hobbies" class="container">
-    <h2 class="margin text-center">What do I like?</h2>
-    <img src="pic_sameer.jpg" class="img-responsive img-circle margin text-center" style="display:inline" alt="This is what I do:)" >
-    <p>
-    <ul type="square">
-        <li>I am interested in a lot of things, some of them to list
-            <ol type="i">
-                <li> Musical Instruments, like Violin, Guitar, Casio
-                <li> Reading books
-                <li> Playing Badminton, swimming
-                <li> Watching anime. TED talks, ...
-            </ol>
-        </li>
-        <li>
-            I am interested in <i>mathematics</i>. I spend quite a time solving puzzles and problems on <a href="https://www.brilliant.org">Brilliant</a>.
-        </li>
-        <li>
-            I also like reading about random trivia on sites like Quora, Inshorts and Curiosity.
-        </li>
-        <li>
-            I love to learn new subjects like languages, more on philosophy, economics, etc.
-        </li>
-    </ul>
-    </p> 
-</div>
-
-<div id="Interests" class="container text-center">
-    <h2 class="margin">What I want to become?</h2>
-    <div class="row">
-        <div class="col-md-6">
-           <div class="card" style="background-color:lightgrey">
-                <p>
-                <h3 align="center">What I want to do</h3>
-                I am interested in pursuing a career in a lot of things like artificial intelligence, machine learning,
-                computer vision and object identification, humanoid robots and even careers related to maths like
-                algorithms design, etc.
-                </p>
-            </div>
-        </div>
-        <div class "col-md-6">
-            <div class="card">
-                <p>
-                <h3 align="center">Experiences</h3>
-                I am currently a part of Autonomous Underwater Vehicle team at IIT Bombay in their Software Subdivision.
-                Apart from that I have some experience in Institute Summer Technical Project.
-                </p>
-            </div>
+<div id="home" class="container container-table">
+    <div class="row vertical-center-row">
+        <div class="text-center col-md-8 col-md-offset-2 back">
+          <h1>Welcome</h1>
+          <h4>
+            Stuck at some problem or a course assignment? You have come to the right place.
+            Here you can ask your peers and the faculty your doubts and queries, be it while
+            solving the assignments, or just before the exams!
+            </h4>
         </div>
     </div>
 </div>
 
-<footer id="Contact_me" class="container">
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <p>
-                <h3>You can contact me using these links:</h3>
-                <hr />
-                <a href="https://www.facebook.com/pranav.rao.3975" target="_blank"><i class="fa fa-facebook-official" data-toggle="tooltip" title="FB" style="font-size:40px"></i></a>
-                <a href="https://github.com/pranavrao870" target="_blank"><i class="fa fa-github" style="font-size:40px" data-toggle="tooltip" title="GitHub"></i></a>
-                <a href="mailto: pranavrao870@gmail.com" target="_blank"><span class="glyphicon glyphicon-envelope" style="font-size:40px" data-toggle="tooltip" title="pranavrao870@gmail.com"></span></a>
-            </p>
-        </div>
-    </div>
-</footer>
+<div class="parallax2"></div>
+
+<div id="about" class="container container-table">
+  <div class="row vertical-center-row">
+      <div class="text-center col-md-8 col-md-offset-2 back">
+        <h1>Ask Question Any Time</h1>
+        <h4>
+          Interactive Academics is a Question Answer forum built for courses at universities.
+          Couldn't pay attention in the class and now don't undertand what the topic is all
+          about? Well we have got you covered. Here you can interact with your peers and faculty for help.  
+        </h4>
+      </div>
+  </div>
+</div>
+
+<div class="parallax3"></div>
+
+<div id="contact" class="container container-table">
+  <div class="row vertical-center-row">
+      <div class="text-center col-md-8 col-md-offset-2 back">
+        <h1>Write to Us</h1>
+
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-md-12 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
 </body>
+</html>
