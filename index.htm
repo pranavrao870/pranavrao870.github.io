@@ -8,14 +8,72 @@
   <title>Interactive Academics</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <!--<link rel="stylesheet" type="text/css" href="index.css">-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    .parallax {
+    background-image: url("back.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    background-image: url("back_2.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    background-image: url("back_3.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    html, body, .container-table {
+      height: 100%; 
+    }
+    .container-table {
+        display: table;
+    }
+    .vertical-center-row {
+        display: table-cell;
+        vertical-align: middle;
+    }
+ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+        
+    @media screen and (max-width: 767px)
+    {
+      .sidenav
+      {
+        height: auto;
+        padding: 15px;
+      }
+      .parallax
+      {
+        background-attachment: scroll;
+      }
+      .row.content {height:auto;} 
+    }
+</style>
+
 </head>
 
 <body>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
