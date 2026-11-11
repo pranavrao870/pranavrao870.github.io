@@ -1,188 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Pranav's Homepage</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">About me</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Projects</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="docs/resume.pdf">Resume</a>
-              </li>
-          </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8ddc8">
+  <title>A Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Allura&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="opening" id="opening" aria-label="Wedding invitation cover">
+      <div class="cover-art">
+        <div class="cover-paper"></div>
+        <div class="cover-botanical botanical-left" aria-hidden="true">
+          <svg viewBox="0 0 220 350"><g fill="none" stroke="#b7c19b" stroke-width="1.8"><path d="M15 330 Q85 220 175 18"/><path d="M54 270 Q14 235 23 202 Q62 215 54 270Z"/><path d="M76 229 Q125 216 130 176 Q85 185 76 229Z"/><path d="M96 183 Q47 164 52 128 Q95 143 96 183Z"/><path d="M119 135 Q160 122 165 86 Q127 97 119 135Z"/><path d="M140 90 Q103 72 111 39 Q144 57 140 90Z"/><path d="M41 292 Q83 294 91 260 Q54 260 41 292Z"/></g></svg>
         </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <h1 class="text-uppercase mb-0">Pranav Rao</h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Computer Science Student - Third Year </h2>
-      </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">About me</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="lead">
-              Hi guys! I am Pranav, a third year student from IIT Bombay.
-              Currently, I'm pursuing majors in Computer Science.
-              I am interested in Data Analysis, Machine Learning, Algorithms, Discrete Structures and Computational
-              Complexity.I wish to pursue a career in research in one of these topics.
-              If you are interested in knowing more about me, you can contact me or have a look at my resume
-            </p>
+        <div class="cover-botanical botanical-right" aria-hidden="true">
+          <svg viewBox="0 0 220 350"><g fill="none" stroke="#b7c19b" stroke-width="1.8"><path d="M205 330 Q135 220 45 18"/><path d="M166 270 Q206 235 197 202 Q158 215 166 270Z"/><path d="M144 229 Q95 216 90 176 Q135 185 144 229Z"/><path d="M124 183 Q173 164 168 128 Q125 143 124 183Z"/><path d="M101 135 Q60 122 55 86 Q93 97 101 135Z"/><path d="M80 90 Q117 72 109 39 Q76 57 80 90Z"/><path d="M179 292 Q137 294 129 260 Q166 260 179 292Z"/></g></svg>
+        </div>
+        <div class="cover-layout">
+          <div class="cover-photo-frame" role="img" aria-label="Couple photo">
+            <div class="cover-photo-inner">
+              <img src="couple-photo.jpg" alt="Arpita and Pranav" onerror="this.style.display='none'">
+            </div>
           </div>
+          <div class="cover-copy">
+            <p class="eyebrow">A NEW CHAPTER BEGINS</p>
+            <h1><span>Arpita</span><i>&amp;</i><span>Pranav</span></h1>
+            <div class="ornament"><span></span><b>❦</b><span></span></div>
+            <p class="cover-note">Of all the roads we've walked, this one leads home — to each other.</p>
+          </div>
+        </div>
+        <div class="flower-corner flower-a">✿</div><div class="flower-corner flower-b">✿</div>
       </div>
+
+      <div class="curtain curtain-left" aria-hidden="true">
+        <div class="curtain-folds"></div><div class="curtain-edge"></div>
+        <div class="curtain-vine"><svg viewBox="0 0 260 760"><g fill="none" stroke="#c6cba9" stroke-width="2"><path d="M-20 740 Q120 520 220 30"/><path d="M40 625 Q-5 570 15 530 Q63 558 40 625Z"/><path d="M66 548 Q119 530 123 478 Q77 493 66 548Z"/><path d="M91 450 Q40 420 56 374 Q100 397 91 450Z"/><path d="M125 347 Q176 326 177 276 Q137 296 125 347Z"/><path d="M154 235 Q104 207 121 162 Q163 188 154 235Z"/><path d="M183 123 Q219 104 211 64 Q176 83 183 123Z"/></g></svg></div>
+      </div>
+      <div class="curtain curtain-right" aria-hidden="true">
+        <div class="curtain-folds"></div><div class="curtain-edge"></div>
+        <div class="curtain-vine"><svg viewBox="0 0 260 760"><g fill="none" stroke="#c6cba9" stroke-width="2"><path d="M280 740 Q140 520 40 30"/><path d="M220 625 Q265 570 245 530 Q197 558 220 625Z"/><path d="M194 548 Q141 530 137 478 Q183 493 194 548Z"/><path d="M169 450 Q220 420 204 374 Q160 397 169 450Z"/><path d="M135 347 Q84 326 83 276 Q123 296 135 347Z"/><path d="M106 235 Q156 207 139 162 Q97 188 106 235Z"/><path d="M77 123 Q41 104 49 64 Q84 83 77 123Z"/></g></svg></div>
+      </div>
+      <button class="open-seal" id="openButton" type="button" aria-label="Tap to open wedding invitation">
+        <span class="seal-top">✦</span><span class="seal-label">TAP TO<br>OPEN</span><span class="seal-bottom">❦</span>
+      </button>
+      <button class="scroll-prompt" id="scrollPrompt" type="button" aria-label="Your invitation awaits — scroll down to view it">YOUR INVITATION AWAITS <span aria-hidden="true">↓</span></button>
+      <button class="skip-opening" id="skipOpening" type="button">Skip intro ↓</button>
     </section>
 
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Projects</h2>
-        <hr class="star-light mb-5">
-        <div class="row">
-              <div class="col-lg-12 text-center">
-                <p class="lead">
-                  I worked on the topic of visual question answering this summer. This was my first exposure to deep learning,
-                  convolutional networks and natural language processing.I implemented the model I studied in one of the <a href="https://arxiv.org/abs/1801.08163">
-                  paper</a> in tensorflow and tried replicating the results
-                </p>
-              </div>
-              <div class="col-lg-12 text-center">
-                  <p class="lead">
-                    I am really interest in robotics and automated machines. I was a part of <a href="www.auv-iitb.org">Autonomous Underwater Vehicle</a>
-                    team of IIT Bombay as a chief software designer. I learnt a great deal about acoustic signal processing, localization using kalman filters, image
-                    processing and PID controllers
-                  </p>
-              </div>
-              <div class="col-lg-12 text-center">
-                  <p class="lead">
-                    I did a lot of projects like designing the AI for the game of GO, simulating networking protocols like
-                    spanning tree protocols and link layer packet forwarding, building a railway controller network on FPGA
-                    boards, coding in VHDL and so on
-                  </p>
-              </div>
+    <div id="invitation" class="invitation" aria-hidden="true">
+      <section class="hero section-paper">
+        <div class="hero-frame">
+          <div class="hero-sparkles" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>·</i><i>✧</i><i>·</i><i>✦</i><i>✧</i></div>
+          <div class="drape drape-top"></div>
+          <div class="side-drape side-left"></div><div class="side-drape side-right"></div>
+          <div class="hero-content">
+            <p class="script-small">We're getting married</p>
+            <div class="tiny-heart">✦</div>
+            <div class="welcome-copy">
+              <p>A day to remember,<br>a moment to cherish,<br>and a time to celebrate</p>
+              <p>as our lives are tuned together in a beautiful &amp; melodious wedlock.</p>
+              <p>Make our moments memorable with your gracious presence.</p>
+              <p class="welcome-closing">Do come and bless us.</p>
+              <p class="welcome-signature"><span>Arpita</span> <em>&amp;</em> <span>Pranav</span></p>
+            </div>
+            <div class="hero-rule"><span>❦</span></div>
+          </div>
+          <div class="garden-bottom" aria-hidden="true"><span>✿</span><span>❀</span><span>✿</span><span>❀</span><span>✿</span></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container" id="contact">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Address</h4>
-            <p class="lead mb-0">Room 247, Hostel 5, IIT Bombay
-              <br>Mumbai</p>
+      <section class="scratch-section section-paper">
+        <p class="script-heading">Save the date</p>
+        <p class="scratch-instruction">A day written in the stars</p>
+        <div class="scratch-star-wrap">
+          <div class="revealed-star" aria-live="polite">
+            <svg viewBox="0 0 240 230" role="img" aria-label="Star containing the wedding date">
+              <defs><linearGradient id="starFill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7b8765"/><stop offset="1" stop-color="#354936"/></linearGradient></defs>
+              <path d="M120 12 L148 79 L221 84 L165 132 L182 204 L120 165 L58 204 L75 132 L19 84 L92 79 Z" fill="url(#starFill)" stroke="#c5ad73" stroke-width="2.5"/>
+              <text x="120" y="126" text-anchor="middle" fill="#fff8e9" font-family="Playfair Display,Georgia,serif" font-size="17" letter-spacing=".5">14 · 12 · 2026</text>
+            </svg>
           </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/pranav.rao.3975">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/pranav-rao-0356b124/">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/pranavrao870">
-                  <i class="fa fa-fw fa-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">I used this cool open source Bootstrap theme, Freelancer created by
-              <a href="http://startbootstrap.com">Start Bootstrap</a> to make this website</p>
-          </div>
+          <canvas id="scratchCanvas" aria-label="Scratch the gold foil with your finger or mouse to reveal the date"></canvas>
+          <span class="scratch-shine" aria-hidden="true">✧</span>
         </div>
-      </div>
-    </footer>
+        <div class="countdown" id="countdown" aria-label="Time left until the wedding">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+        <button class="save-date" id="saveDate" type="button">♧ &nbsp; ADD TO CALENDAR</button>
+        <p class="scratch-footnote">Gently scratch the star to reveal it</p>
+      </section>
 
-    <!-- <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
-      </div>
-    </div> -->
+      <section class="timeline-section section-paper">
+        <p class="script-heading">Program timeline</p>
+        <div class="section-ornament">— <span>♥</span> —</div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-dot">✦</span><div><time>Reception</time><h3>Sunday, 13th December 2026</h3><p>7:00 pm onwards</p></div></article>
+          <article class="timeline-item"><span class="timeline-dot">❦</span><div><time>Muhurtham</time><h3>Monday, 14th December 2026</h3><p>8.21 am</p></div></article>
+        </div>
+      </section>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
+      <section class="venue-section section-paper">
+        <p class="script-heading">Where we meet</p>
+        <div class="section-ornament">— <span>♥</span> —</div>
+        <div class="venue-card">
+          <div class="venue-art"><span>❦</span><span>✿</span><span>❦</span></div>
+          <p class="eyebrow">THE WEDDING VENUE</p>
+          <h2>"G M Convention Centre"</h2>
+          <p class="venue-former">(formerly Jayanth Convention Centre)</p>
+          <p>No. 79, Railway Layout, 2nd Stage,<br>Near Ullal RTO, Ullal Main Road,<br>Bengaluru – 560 110.</p>
+          <a class="map-link" href="https://maps.app.goo.gl/CnLeqxE5op1NwCyn6" target="_blank" rel="noopener">OPEN IN GOOGLE MAPS ↗</a>
+        </div>
+      </section>
+
+      <footer class="closing section-paper">
+        <div class="closing-flower">❀</div>
+        <p class="script-heading">Our forever begins</p>
+        <h2>Arpita <span>&amp;</span> Pranav</h2>
+        <p>With love, we look forward to celebrating with you.</p>
+        <div class="section-ornament">— <span>♥</span> —</div>
+        <button id="replayButton" class="replay-button">↻ &nbsp; REPLAY THE OPENING</button>
+      </footer>
     </div>
-
-    <!-- Portfolio Modals -->
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
-
-  </body>
-
+  </main>
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
 </html>
