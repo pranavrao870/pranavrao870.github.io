@@ -7,6 +7,28 @@
   const replayButton = document.getElementById('replayButton');
   let opened = false;
 
+  // Floating "More below" cue: shown while the guest is inside the invitation,
+  // hidden on the cover (which has its own button) and once the footer is reached.
+  const scrollCue = document.getElementById('scrollCue');
+  let coverInView = true, footerInView = false;
+  function updateScrollCue() {
+    const show = invitation.classList.contains('visible') && !coverInView && !footerInView;
+    scrollCue.classList.toggle('is-visible', show);
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      coverInView = entry.intersectionRatio > 0.35;
+      updateScrollCue();
+    }, { threshold: [0, 0.35, 1] }).observe(opening);
+    new IntersectionObserver(([entry]) => {
+      footerInView = entry.isIntersecting;
+      updateScrollCue();
+    }).observe(document.querySelector('.closing'));
+  }
+  scrollCue.addEventListener('click', () => {
+    window.scrollBy({ top: Math.round(window.innerHeight * 0.8), behavior: 'smooth' });
+  });
+
   function openInvitation() {
     if (opened) return;
     opened = true;
@@ -15,6 +37,7 @@
       invitation.classList.add('visible');
       invitation.setAttribute('aria-hidden', 'false');
       requestAnimationFrame(() => invitation.classList.add('shown'));
+      updateScrollCue();
       // Keep the guest on the cover. They choose when to scroll to the invitation.
       setTimeout(() => launchConfetti(), 700);
     }, 1750);
@@ -31,6 +54,7 @@
     setTimeout(() => {
       invitation.classList.remove('visible');
       opening.classList.remove('opened');
+      updateScrollCue();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 500);
   });
